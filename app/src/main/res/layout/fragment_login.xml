@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:srcCompat="@drawable/white_drop" />
+
+    <EditText
+        android:id="@+id/fragment_user_login_phone"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="رقم المستخدم"
+        android:gravity="right"
+        android:textColorHint="#AEBC122B"
+        android:paddingRight="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:paddingTop="@dimen/_8sdp"
+        android:background="@drawable/edit_background"
+        android:inputType="phone"
+         />
+
+    <EditText
+        android:id="@+id/fragment_user_login_password"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/fragment_user_login_phone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#AEBC122B"
+        android:hint="كلمة المرور"
+        android:gravity="right"
+        android:paddingRight="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:paddingTop="@dimen/_8sdp"
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/fragment_user_login"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/fragment_user_login_password"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_10ssp"
+        android:background="@drawable/edit_background"
+        android:textColor="#AEBC122B"
+        android:text="دخول" />
+
+    <Button
+        android:id="@+id/fragment_user_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_minus5sdp"
+        android:layout_marginLeft="@dimen/_minus5sdp"
+        android:layout_marginBottom="@dimen/_minus6sdp"
+        android:text="لا تمتلك حساب ؟ يمكنك التسجيل من هنا"
+        android:textColor="#AEBC122B"
+        android:textSize="@dimen/_10ssp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_login_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="تذكرني"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/fragment_user_forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_user_login_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="نسيت كلمة السر؟"
+        android:textColor="#ffff"
+        android:textSize="@dimen/_10ssp" />
+</RelativeLayout>

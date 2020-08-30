@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    >
+
+
+
+    <TextView
+        android:id="@+id/title_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="انشاء حساب جديد"
+        android:textColor="#ffff"
+        android:textSize="@dimen/_20ssp"
+        app:srcCompat="@drawable/white_drop" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_regist"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_regist">
+
+            <EditText
+                android:id="@+id/fragment_user_regist_name"
+                android:layout_below="@+id/imageView2"
+                android:drawableEnd="@drawable/ic_person_outline_black_24dp"
+                android:ems="10"
+                android:hint=" الاسم"
+                android:inputType="textPersonName"
+                style="@style/regist_style"/>
+
+            <EditText
+                android:id="@+id/fragment_user_regist_phone"
+                android:layout_below="@+id/fragment_user_regist_name"
+                android:drawableEnd="@drawable/ic_local_phone_black_24dp"
+                android:ems="10"
+                android:hint=" رقم الهاتف"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style"/>
+
+            <EditText
+                android:id="@+id/fragment_user_regist_mail"
+                android:layout_below="@+id/fragment_user_regist_phone"
+                android:drawableEnd="@drawable/ic_email_black_24dp"
+                android:ems="10"
+                android:hint=" البريد الالكتروني"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style"/>
+
+            <EditText
+                android:id="@+id/fragment_user_regist_date"
+                android:layout_below="@+id/fragment_user_regist_mail"
+                android:drawableEnd="@drawable/ic_today_black_24dp"
+                android:ems="10"
+                android:hint=" تاريخ الميلاد"
+                android:inputType="date"
+                style="@style/regist_style" />
+
+            <Spinner
+                android:id="@+id/fragment_user_regist_type"
+                android:layout_below="@+id/fragment_user_regist_date"
+                android:drawableEnd="@drawable/mail"
+                android:ems="10"
+                android:hint=" فصيلة الدم"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style"
+                />
+
+            <EditText
+                android:id="@+id/fragment_user_regist_last_donation"
+                android:layout_below="@+id/fragment_user_regist_type"
+                android:drawableEnd="@drawable/ic_today_black_24dp"
+                android:ems="10"
+                android:hint=" معاد اخر تبرع"
+                android:inputType="date"
+                style="@style/regist_style"/>
+
+            <Spinner
+                android:id="@+id/fragment_user_regist_country"
+                android:layout_below="@+id/fragment_user_regist_last_donation"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style" />
+
+            <Spinner
+                android:id="@+id/fragment_user_regist_city"
+                android:layout_below="@+id/fragment_user_regist_country"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style" />
+
+            <EditText
+                android:id="@+id/fragment_user_regist_password"
+                android:layout_below="@+id/fragment_user_regist_city"
+                android:drawableEnd="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:hint=" كلمة المرور"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style"/>
+
+            <EditText
+                android:id="@+id/fragment_user_regist_repassword"
+                android:layout_below="@+id/fragment_user_regist_password"
+                android:drawableEnd="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:gravity="right"
+                android:hint=" تاكيد كلمة المرور"
+                android:inputType="textEmailAddress"
+                style="@style/regist_style"/>
+
+
+            <Button
+                android:id="@+id/fragment_user_regist_send_btn"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/fragment_user_regist_repassword"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_background"
+                android:text="انشاء"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:textColor="#AEBC122B" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
